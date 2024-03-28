@@ -1,66 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-            margin: 0 5px;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
+      /* Estilos CSS pueden ir aquí */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: hsl(0, 0%, 98%);
+      }
+
+      header {
+        background-color: #ae67b9;
+        color: #000000;
+        padding: 20px;
+        text-align: center;
+        header
+      }
+
+      header img {
+    width: 230px; /* Cambia el ancho de la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    border-radius: 20%; /* Aplica bordes redondeados para hacer que la imagen sea circular */
+}
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 40px;
+        background-color: #c07ff5; /* Cambia el color de fondo de todas las secciones */
+        padding: 20px;
+        border-radius: 5px; /* Agrega bordes redondeados a las secciones */
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Mi Página Web</h1>
+      <img
+        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Texto alternativo de la imagen"
+      />
+      <h1>Portafolio de Angelo Di Pascuale</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Acerca de</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
-    </nav>
-    <section>
-        <h2>Bienvenido a Mi Página Web</h2>
-        <p>Esta es una página web muy sencilla creada utilizando HTML.</p>
-    </section>
+
+    <main>
+      <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>
+          ¡Hola! Angelo Di Pascuale: Creador de páginas web no code con
+          experiencia en HTML, CSS y JavaScript. Comprometido con la excelencia
+          y la innovación.
+        </p>
+      </section>
+
+      <section id="portafolio">
+        <h2>Portafolio</h2>
+        <p>Aquí puedes encontrar algunos de mis proyectos destacados:</p>
+        <!-- Puedes agregar aquí tus proyectos -->
+      </section>
+
+      <section id="habilidades">
+        <h2>Habilidades</h2>
+        <p>Algunas de las habilidades que poseo incluyen:</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>
+          Puede contactarme a traves de los siguientes medios por oportunidades
+          laborales!:
+        </p>
+        <ul>
+          <li>Email: angedps@gmail.com</li>
+          <li>Teléfono: 123-456-7890</li>
+          <li>Redes Sociales: enlace a tus perfiles en redes sociales</li>
+        </ul>
+      </section>
+    </main>
+
     <footer>
-        <p>Derechos de autor &copy; 2024 - Mi Página Web</p>
+      <p>© 2024 Angelo Di Pascuale</p>
     </footer>
-</body>
+  </body>
 </html>
